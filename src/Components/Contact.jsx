@@ -7,13 +7,12 @@ function Contact() {
 
   return (
     <div className="absolute z-20">
-      <div onClick={() => setForm((perv) => !perv)} className="cursor-pointer">
-        <div className="fixed bottom-2/4 right-14 ">
-          <div className="  sm:text-2xl font-semibold">
-            <div>
-              <GrNotes className="sm:h-14 h-8 w-full text-black" />
-            </div>
-            <div className="text-yellow-600 font-bold ">
+      {/* Toggle Button */}
+      <div onClick={() => setForm((prev) => !prev)} className="cursor-pointer">
+        <div className="fixed bottom-1/2 right-6 sm:right-14">
+          <div className="text-center font-semibold sm:text-2xl">
+            <GrNotes className="sm:h-14 h-10 w-10 mx-auto text-indigo-600" />
+            <div className="text-indigo-700 font-bold">
               Get In
               <br /> Touch
             </div>
@@ -21,72 +20,78 @@ function Contact() {
         </div>
       </div>
 
+      {/* Modal */}
       <div
-        className={`${form ? "block" : "hidden"} fixed inset-0 bg-black/70   `}
+        className={`${
+          form ? "block" : "hidden"
+        } fixed inset-0 bg-black/60 flex items-center justify-center`}
       >
-        <div className="sm:m-32 m-10 flex justify-center items-center rounded-md py-8 ">
-          <div className="gap-1 bg-white sm:py-10 py-3 rounded-lg flex flex-col px-3">
-            <div
-              onClick={() => setForm(false)}
-              className="w-full flex cursor-pointer justify-end sm:pb-4"
-            >
-              <RxCross2 size={25} />
+        <div className="bg-white rounded-xl p-6 sm:p-10 w-[90%] sm:w-[600px] shadow-lg relative">
+          <button
+            onClick={() => setForm(false)}
+            className="absolute top-4 right-4 text-slate-600 hover:text-red-600"
+          >
+            <RxCross2 size={24} />
+          </button>
+
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-800 mb-6">
+            Let's Discuss Your Software Project
+          </h2>
+
+          <form className="flex flex-col gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <input
+                className="flex-1 px-4 py-3 border border-slate-300 rounded-md focus:outline-indigo-500"
+                type="text"
+                placeholder="Your Name *"
+              />
+              <input
+                className="flex-1 px-4 py-3 border border-slate-300 rounded-md focus:outline-indigo-500"
+                type="email"
+                placeholder="Your Email *"
+              />
             </div>
-            <p className="text-3xl font-semibold pb-10">
-              Want to discuss your project ?
-            </p>
-            <div className="flex gap-4 flex-col sm:flex-row">
+            <div className="flex flex-col sm:flex-row gap-4">
               <input
-                className="h-12 border-b"
+                className="flex-1 px-4 py-3 border border-slate-300 rounded-md focus:outline-indigo-500"
                 type="text"
-                placeholder=" Your Name * "
+                placeholder="Phone Number *"
               />
               <input
-                className="h-12 border-b "
+                className="flex-1 px-4 py-3 border border-slate-300 rounded-md focus:outline-indigo-500"
                 type="text"
-                placeholder=" Your Email * "
-              />
-            </div>
-            <div className="flex gap-4 flex-col sm:flex-row">
-              <input
-                className="h-12 border-b"
-                type="text"
-                placeholder=" Phone Number * "
-              />
-              <input
-                className="h-12 border-b"
-                type="text"
-                placeholder=" Looking For *  "
+                placeholder="Service Needed (e.g. App, Website)"
               />
             </div>
             <input
-              className="h-12 border-b"
+              className="px-4 py-3 border border-slate-300 rounded-md focus:outline-indigo-500"
               type="text"
-              placeholder=" Skype ID / WhatsApp No "
+              placeholder="Skype ID / WhatsApp No"
             />
+            <textarea
+              className="px-4 py-3 border border-slate-300 rounded-md focus:outline-indigo-500 resize-none"
+              rows={4}
+              placeholder="Tell us a bit about your project..."
+            ></textarea>
 
-            <input
-              className="h-12 border-b"
-              type="text"
-              placeholder=" Your Message "
-            />
-
-            <div className="mt-3 w-full text-white flex justify-center gap-4 text-sm ">
-              <button className=" bg-red-700  h-10 rounded-md  font-bold w-1/2">
-                Enquiry Now
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              <button
+                type="submit"
+                className="bg-indigo-600 text-white font-semibold py-3 rounded-md w-full sm:w-1/2 hover:bg-indigo-700 transition"
+              >
+                Submit Enquiry
               </button>
 
-              <button className="bg-green-600 h-10  rounded-md  font-bold w-1/2">
-                <a
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Whatsapp Us
-                </a>
-              </button>
+              <a
+                href="/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 text-white text-center font-semibold py-3 rounded-md w-full sm:w-1/2 hover:bg-green-700 transition"
+              >
+                WhatsApp Us
+              </a>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

@@ -6,120 +6,83 @@ const Total = () => {
   const data = [
     {
       img: "src/Business-Centric-pics/transformation.png",
-      title: "Didital Tranformation",
+      title: "Digital Transformation",
     },
-
     {
       img: "src/Business-Centric-pics/custom.png",
-      title: "Coustom Software Development",
+      title: "Custom Software Solutions",
     },
-
     {
       img: "src/Business-Centric-pics/mobile-development.png",
       title: "Mobile App Development",
     },
-
     {
       img: "src/assets/BusinessCentric-jpg/engineering.png",
-      title: "QA Automation",
+      title: "QA & Test Automation",
     },
-
     {
       img: "src/Business-Centric-pics/cloud-data.png",
-      title: "Cloud Optimization",
+      title: "Cloud Infrastructure",
     },
-
     {
       img: "src/Business-Centric-pics/cyber-security.png",
-      title: "Cyber Security",
+      title: "Cybersecurity Services",
     },
-
     {
       img: "src/Business-Centric-pics/polo-shirt.png",
-      title: "Ai Annotation & Labeling",
+      title: "AI Data Labeling",
     },
   ];
 
   const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
+    superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5 },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3 },
+    tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
+    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
   };
 
   return (
-    <div className="px-2  py-14 ">
-      <div className="sm:px-12">
-        <div className=" font-extrabold text-base sm:text-4xl ">
-          <div className="flex gap-2 ">
-            <p>Over</p>
-            <p className="text-blue-600  ">5 Years</p>
-            <p>of Business-Centric</p>
-          </div>
-          <p>Tech Expertise</p>
-        </div>
-
-        <p className="text-base sm:text-2xl pt-4 ">
-          Straightforward solutions to complex business challenges.
+    <div className="bg-gray-50 px-4 sm:px-12 py-16">
+      <div className="text-center mb-10">
+        <h2 className="text-xl sm:text-4xl font-extrabold text-gray-800">
+          <span className="text-blue-600">5+ Years</span> of Calgary-Based Innovation
+        </h2>
+        <p className="text-base sm:text-2xl mt-4 text-gray-600">
+          Practical solutions tailored to complex business challenges.
         </p>
-
-        <div className=" justify-center items-center py-12 flex gap-6">
-          {/* <Carousel responsive={responsive}>
-            {data.map((d) => (
-              <div className="shrink-0 bg-gray-200 w-7/12  mx-3 my-3  h-64 rounded-md shadow-[0_10px_60px_5px_rgba(0.3,0.3,0.3,0.3)] flex  flex-col font-semibold text-center justify-center items-center  ">
-                <div className="flex flex-col items-center px-2 gap-2 text-center">
-                  <img src={d.img} alt="" />
-                  <p>{d.title}</p>
-                </div>
-              </div>
-            ))}
-          </Carousel> */}
-
-          {data.map((d) => (
-            <div className="shrink-0  h-64 w-48 rounded-md shadow-[0_10px_60px_5px_rgba(0.3,0.3,0.3,0.3)] flex  flex-col font-semibold text-center justify-center items-center ">
-              <div className=" flex flex-col items-center px-2 gap-2 text-center">
-                <img src={d.img} alt="" />
-                <p>{d.title}</p>
-              </div>
-            </div>
-          ))}
-
-
-
-
-
-        </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row px-2  items-center justify-evenly rounded-md py-16 mx-4  my-2 shadow-[0_10px_60px_5px_rgba(0.3,0.3,0.3,0.3)] ">
-        <div className="sm:w-1/2 py-10">
-          <p className="text-3xl font-extrabold py-3">Digital Transformation</p>
-          <p className="text-lg">
-            People, things, businesses, and technology are all getting
-            interconnected. It is a time when each person is profoundly impacted
-            by everything digital. Businesses are getting digitally disrupted as
-            well. There is no single business that can say that Artificial
-            Intelligence (AI), Internet of Things (IoT), Mobile, Machine
-            Learning, Big Data, Cyber Security, and CloudComputing is not meant
-            for their business needs. Digital Transformation is not a choice
-            anymore.
+      <div className="flex justify-center items-center py-10">
+        <Carousel responsive={responsive}>
+          {data.map((d, i) => (
+            <div
+              key={i}
+              className="h-64 w-48 bg-white rounded-2xl mx-4 flex flex-col justify-center items-center shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            >
+              <img src={d.img} alt={d.title} className="w-20 h-20 mb-4" />
+              <p className="text-center text-sm font-semibold px-2">{d.title}</p>
+            </div>
+          ))}
+        </Carousel>
+      </div>
+
+      <div className="flex flex-col sm:flex-row items-center bg-white rounded-2xl p-8 sm:p-12 shadow-xl mt-12">
+        <div className="sm:w-1/2 mb-6 sm:mb-0 sm:pr-10">
+          <h3 className="text-3xl font-bold text-gray-800 mb-4">Digital Transformation in Calgary</h3>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            Calgary businesses are embracing digital change to stay competitive.
+            Whether it's AI, IoT, mobile solutions, cloud infrastructure, or advanced analytics—
+            technology is no longer optional. At our core, we help local enterprises
+            leverage modern software to streamline operations, increase agility, and
+            meet customer expectations in a digital-first world.
           </p>
         </div>
-        <div>
-          <img src="src/assets/BusinessCentric-jpg/images-3.jpg" alt="" />
+        <div className="sm:w-1/2">
+          <img
+            src="src/assets/BusinessCentric-jpg/images-3.jpg"
+            alt="Digital Transformation"
+            className="rounded-xl shadow-lg"
+          />
         </div>
       </div>
     </div>

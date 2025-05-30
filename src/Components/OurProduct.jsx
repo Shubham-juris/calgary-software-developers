@@ -1,376 +1,143 @@
 import React, { useEffect, useState } from "react";
 
 function OurProduct() {
-  const [objects, setObjects] = useState([]);
+  const [content, setContent] = useState([]);
 
-  const tab = [
-    <div className="pt-14 px-2 flex items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/book.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Edutask</p>
-            <p>Online Course Selling Marketplace</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/bus.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Bus365</p>
-            <p>Bus Reservation System</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/chat.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Tradebox</p>
-            <p>Tradebox CryptoCurrency Buy Sell and Trading Software</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/erp.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold"> ERP</p>
-            <p> Business ERP Solution / Product / Shop / Company Management</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/flight.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Flight Booking</p>
-            <p>Flight Booking Software</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/garage.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold"> GMS</p>
-            <p>Garage Management Software </p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/hr4.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">HR Manager</p>
-            <p>Human Resource Management System HR Software (HRMS)</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/inventory.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold"> Wholesale</p>
-            <p> Inventory Control and Inventory Management System</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="h-28 w-96 rounded-lg border  bg-gradient-to-r from-teal-400 to-indigo-600">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Business/vms.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold"> VSG </p>
-            <p> Vehicle Management System</p>
-          </div>
-        </div>
-      </div>
-    </div>,
-
-    <div className="pt-14 px-2 flex items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/BlockChain/crypto.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Nishue</p>
-            <p>CryptoCurrency Buy Sell Exchange and Lending with MLM System</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/BlockChain/cryptoW.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">ICO Wallet</p>
-            <p>
-              ICO Script | Complete ICO Software and Token Launching Solution
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/BlockChain/exchange.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold"></p>
-            <p>Tradebox CryptoCurrency Buy Sell and Trading Software</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/BlockChain/token.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Tokenbox</p>
-            <p>Best Security Token Offering Platform (STO)</p>
-          </div>
-        </div>
-      </div>
-    </div>,
-
-    <div className="pt-14 px-2 flex items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Hospitality/flight.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Flight Booking</p>
-            <p>Flight Booking Software</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Hospitality/manager.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Bhojan</p>
-            <p>Restaurant Management Software with Restaurant Website</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Hospitality/managerH.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Xain</p>
-            <p>Hotel Management System & Booking Software</p>
-          </div>
-        </div>
-      </div>
-    </div>,
-
-    <div className="px-2 pt-14 flex items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/E-Commerce/cashier.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Isshue</p>
-            <p>Multi Store eCommerce Shopping Cart Solution</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img
-              src="/OurProducts/E-Commerce/shopping-cart.png"
-              alt=""
-            />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Storefex</p>
-            <p>Multi Vendor Marketplace Platform</p>
-          </div>
-        </div>
-      </div>
-    </div>,
-
-    <div className="pt-14 flex px-2 items-center justify-center flex-row flex-wrap gap-2">
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Healthcare/clinic.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Hospital Automanager</p>
-            <p>Advance Hospital Management System Software</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Healthcare/doctor.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Hospital</p>
-            <p>Hospital Management System with Website</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img
-              src="/OurProducts/Healthcare/domain-registration.png"
-              alt=""
-            />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Pharma Care</p>
-            <p>Pharmacy Software Made Easy</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img
-              src="/OurProducts/Healthcare/healthcare1.png"
-              alt=""
-            />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Multi-Hospital</p>
-            <p>Best Hospital Management System (SaaS App)</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img
-              src="/OurProducts/Healthcare/management-service.png"
-              alt=""
-            />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Clinic365</p>
-            <p>Clinic Management System</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Healthcare/payment.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">Doctors</p>
-            <p>Doctor Appointment and Prescription System with Website</p>
-          </div>
-        </div>
-      </div>
-      <div class="h-28 w-96 rounded-lg border bg-gradient-to-r from-gray-200 to-blue-300">
-        <div className="flex flex-row">
-          <div className="h-28 w-24  flex justify-center items-center  p-3">
-            <img src="/OurProducts/Healthcare/pharmacy.png" alt="" />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="font-bold">G-Priscription</p>
-            <p>Gynaecology & OBS Consultation Software</p>
-          </div>
-        </div>
-      </div>
-    </div>,
+  const categories = [
+    {
+      name: "Business Solutions",
+      products: [
+        {
+          title: "SmartERP",
+          description: "Complete ERP solution for startups and SMEs",
+          icon: "/icons/erp.png",
+        },
+        {
+          title: "BizPlanner",
+          description: "Project management & planning SaaS",
+          icon: "/icons/planner.png",
+        },
+        {
+          title: "CRM Pro",
+          description: "Client Relationship Management tool",
+          icon: "/icons/crm.png",
+        },
+        {
+          title: "BookSmart",
+          description: "Accounting & bookkeeping software",
+          icon: "/icons/bookkeeping.png",
+        },
+      ],
+    },
+    {
+      name: "Blockchain",
+      products: [
+        {
+          title: "ChainTrade",
+          description: "Crypto trading platform with wallet integration",
+          icon: "/icons/crypto.png",
+        },
+        {
+          title: "TokenLaunch",
+          description: "ICO/Token launch platform with smart contract support",
+          icon: "/icons/token.png",
+        },
+      ],
+    },
+    {
+      name: "Hospitality",
+      products: [
+        {
+          title: "StayWise",
+          description: "Hotel & vacation rental booking system",
+          icon: "/icons/hotel.png",
+        },
+        {
+          title: "DineRight",
+          description: "Restaurant POS & management platform",
+          icon: "/icons/restaurant.png",
+        },
+      ],
+    },
+    {
+      name: "E-Commerce",
+      products: [
+        {
+          title: "ShopSwift",
+          description: "Multi-vendor eCommerce platform",
+          icon: "/icons/ecommerce.png",
+        },
+        {
+          title: "RetailEdge",
+          description: "POS & inventory for small retailers",
+          icon: "/icons/retail.png",
+        },
+      ],
+    },
+    {
+      name: "Healthcare",
+      products: [
+        {
+          title: "MediTrack",
+          description: "Clinic & patient management software",
+          icon: "/icons/clinic.png",
+        },
+        {
+          title: "PharmaFlow",
+          description: "Pharmacy inventory and billing system",
+          icon: "/icons/pharmacy.png",
+        },
+      ],
+    },
   ];
 
   useEffect(() => {
-    setObjects(tab[0]);
+    setContent(categories[0].products);
   }, []);
 
-  return (
-    <>
-      <div className="my-10">
-        <div className="flex text-center flex-col px-4 py-8">
-          <p className=" pb-4 text-4xl font-extrabold  ">Our Product</p>
-          <p className="text-xl font-light">
-            We provide a time-worthy business solution to every type of
-            business. Find out your one and level up your success stairs.
-          </p>
+  const renderCards = (items) =>
+    items.map((item, idx) => (
+      <div
+        key={idx}
+        className="h-28 w-96 rounded-xl border shadow-md bg-gradient-to-r from-indigo-700 to-teal-500 text-white"
+      >
+        <div className="flex h-full items-center p-3">
+          <div className="h-20 w-20 flex justify-center items-center">
+            <img src={item.icon} alt={item.title} className="w-12 h-12" />
+          </div>
+          <div className="ml-4 flex flex-col justify-center">
+            <p className="font-bold text-lg">{item.title}</p>
+            <p className="text-sm">{item.description}</p>
+          </div>
         </div>
-
-        <div className="flex justify-center items-center flex-wrap text-white font-semibold gap-4 ">
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl"
-            onClick={() => setObjects(tab[0])}
-          >
-            Business
-          </button>
-
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl"
-            onClick={() => setObjects(tab[1])}
-          >
-            Block Chain
-          </button>
-
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl"
-            onClick={() => setObjects(tab[2])}
-          >
-            Hospitality
-          </button>
-
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl"
-            onClick={() => setObjects(tab[3])}
-          >
-            E-Commerce
-          </button>
-
-          <button
-            class="bg-indigo-900 hover:bg-indigo-600 px-8 py-1.5 rounded-xl "
-            onClick={() => setObjects(tab[4])}
-          >
-            Healthcare
-          </button>
-        </div>
-
-        <div> {objects}</div>
-
-        <div></div>
       </div>
-    </>
+    ));
+
+  return (
+    <div className="my-16 px-4">
+      <div className="text-center mb-8">
+        <h2 className="text-4xl font-extrabold text-indigo-900">Our Products</h2>
+        <p className="text-lg mt-2 text-gray-600">
+          Innovative solutions crafted by Calgary’s top software engineers to help your business grow.
+        </p>
+      </div>
+
+      <div className="flex justify-center flex-wrap gap-4 mb-8">
+        {categories.map((cat, idx) => (
+          <button
+            key={idx}
+            onClick={() => setContent(cat.products)}
+            className="bg-indigo-900 hover:bg-indigo-700 text-white px-6 py-2 rounded-xl shadow-md"
+          >
+            {cat.name}
+          </button>
+        ))}
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-4">
+        {renderCards(content)}
+      </div>
+    </div>
   );
 }
 

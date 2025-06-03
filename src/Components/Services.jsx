@@ -3,11 +3,11 @@ import React from "react";
 const data = [
   {
     // img: "/Services-jpg/ai-ml.png",
-    text: "AI & Machine Learning",
+    // text: "AI & Machine Learning",
   },
   {
     // img: "/Services-jpg/modernization.png",
-    text: "Legacy Software Modernization",
+    // text: "Legacy Software Modernization",
   },
   {
     // img: "/Services-jpg/cloud.png",

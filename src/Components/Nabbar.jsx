@@ -39,8 +39,8 @@ const Nabbar = () => {
           <div className="flex flex-col pt-8 text-white text-2xl font-semibold text-center gap-4">
             <Link to="/" onClick={() => setIsOpenMenu(false)}>Home</Link>
             <Link to="/about" onClick={() => setIsOpenMenu(false)}>About Us</Link>
-            <Link to="/services" onClick={() => setIsOpenMenu(false)}>Services</Link>
-            <Link to="/blog" onClick={() => setIsOpenMenu(false)}>Insights</Link>
+            <Link to="/services" onClick={() => setIsOpenMenu(false)}></Link>
+            <Link to="/blog" onClick={() => setIsOpenMenu(false)}>Blog</Link>
             <Link to="/contactus" onClick={() => setIsOpenMenu(false)}>Contact</Link>
           </div>
         </div>

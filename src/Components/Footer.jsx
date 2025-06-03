@@ -60,13 +60,13 @@ function Footer() {
             <Link to="/contactus" className="text-gray-400 hover:text-white transition">Get in Touch</Link>
 
             <div className="flex flex-wrap gap-3 pt-4 text-white">
-              <a href="/" target="_blank" rel="noopener noreferrer"><FaFacebookSquare size={25} /></a>
+{/*               <a href="/" target="_blank" rel="noopener noreferrer"><FaFacebookSquare size={25} /></a>
               <a href="/" target="_blank" rel="noopener noreferrer"><FaInstagram size={25} /></a>
               <a href="/" target="_blank" rel="noopener noreferrer"><FaYoutube size={25} /></a>
               <a href="/" target="_blank" rel="noopener noreferrer"><SiGooglemaps size={25} /></a>
               <a href="/" target="_blank" rel="noopener noreferrer"><FaSquarePinterest size={25} /></a>
               <a href="/" target="_blank" rel="noopener noreferrer"><FaTwitterSquare size={25} /></a>
-              <a href="/" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size={25} /></a>
+              <a href="/" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size={25} /></a> */}
             </div>
           </div>
         </div>

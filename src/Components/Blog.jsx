@@ -4,62 +4,47 @@ import { SlCalender } from "react-icons/sl";
 import Nabbar from "./Nabbar";
 import Footer from "./Footer";
 
+// Blog content tailored to Calgary-based software development topics
 const card = [
   {
     img: "/Blog-jpg/01-1.png",
-    topText: " Things That Will Boost Your Career",
-    bottomText:
-      "Today, life has become all about the struggle to have successful and promising careers. To achieve your goals of a successful career, you need",
+    topText: "Top Programming Languages in 2025",
+    bottomText: "As Calgary’s tech ecosystem evolves, developers are embracing languages like Rust, Go, and TypeScript to build scalable, modern applications.",
   },
   {
     img: "/Blog-jpg/01.png",
-    topText: " Benefits Of Working With A Good Recruitment Agency",
-    bottomText:
-      "As an organization looking for talented employees, you might be interested in working with a recruitment agency. After all, searching and connecting",
+    topText: "Why Calgary Is a Hotspot for Software Startups",
+    bottomText: "Discover why tech entrepreneurs are choosing Calgary, with its skilled workforce, growing VC interest, and innovation-friendly policies.",
   },
   {
     img: "/Blog-jpg/10-Information-Technology-Audit-Report-Samples-Templates-PDF-Word.jpg",
-    topText: " Make Your Recruitment Process Easy And Effective",
-    bottomText:
-      "Recruitment is one of the most difficult processes in any company. A lot of times the HR department is lost in recruiting people. It takes  ",
+    topText: "Scaling Agile Teams: A Developer’s Guide",
+    bottomText: "Learn how our Calgary-based teams use Agile methodologies to ship high-quality software faster and foster better team collaboration.",
   },
   {
     img: "/Blog-jpg/about-1.jpg",
-    topText:
-      " Are Recruitment Agencies Helpful To Get A Job In Information Technology?",
-    bottomText:
-      "Recruitment is one of the most difficult processes in any company. A lot of times the HR department is lost in recruiting people. It takes",
+    topText: "How to Get Hired at a Top Software Company",
+    bottomText: "Tips from our recruiters and developers on how to land a role at leading software companies in Alberta’s growing tech industry.",
   },
   {
     img: "/Blog-jpg/banner-finance.jpg",
-    topText: " Acquire The Best Talents In The Market",
-    bottomText:
-      "Employing the right people is crucial for any business. Companies are constantly looking at ways to have the best manpower resources so that they can",
+    topText: "Cost-Effective DevOps Practices for Small Teams",
+    bottomText: "DevOps doesn't have to be expensive. Here’s how Calgary-based teams are implementing CI/CD pipelines on a budget.",
   },
   {
     img: "/Blog-jpg/banner2.jpg",
-    topText: " Embark On The Most Rewarding Career",
-    bottomText:
-      "Embark On The Most Rewarding CareerJuly 25, 2020The dream of any person is to embark on a rewarding career with enough prospects for growth and development. But this is not always achieved.",
-  },
-  {
-    img: "/Blog-jpg/Recruitment-Agency-in-Alberta.jpg",
-    topText: "Getting An Agency To Hire For You",
-    bottomText:
-      "Why would anyone want to hand over the job of hiring people to someone else? Who will know the company and its requirements better than",
+    topText: "Building with AI: Practical Use Cases in 2025",
+    bottomText: "AI isn’t just hype. From customer support to code generation, here’s how software firms in Calgary are making AI work.",
   },
   {
     img: "/Blog-jpg/Requirement.png",
-    topText:
-      " Are Recruitment Agencies Helpful To Get A Job In Information Technology?",
-    bottomText:
-      "The demand for new talent has grown due to the information technology (IT) sector's explosive growth. The IT industry is said to offer several chances",
+    topText: "Cloud Migration Pitfalls & How to Avoid Them",
+    bottomText: "If you're planning to migrate to the cloud, learn from these common mistakes we’ve seen with companies across Western Canada.",
   },
   {
     img: "/Blog-jpg/service-detail.jpg",
-    topText: " A Good Agency Can Get You The Right Job",
-    bottomText:
-      "It is everyone's dream to land the right job. It is not just always about money and position. There is something that is much more",
+    topText: "Crafting Better User Experiences in SaaS",
+    bottomText: "UX is critical to software success. Discover how our Calgary team uses Figma, user testing, and design systems to get it right.",
   },
 ];
 
@@ -69,58 +54,54 @@ const Blog = () => {
   }, []);
 
   return (
-    <div>
-      <div className="">
-        <Nabbar />
+    <div className="bg-slate-50 text-slate-800">
+      <Nabbar />
+
+      {/* Hero Section */}
+      <div className="relative h-80">
+        <img
+          src="/Blog-jpg/Our-Blog (2).jpg"
+          className="w-full h-full object-cover brightness-75"
+          alt="Blog Banner"
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h1 className="text-white text-4xl sm:text-5xl font-bold">Our Blog</h1>
+        </div>
       </div>
 
-      <div>
-        <div className=" h-80  flex relative ">
-          <img
-            src="/Blog-jpg/Our-Blog (2).jpg"
-            className=" w-full object-cover"
-          />
-          <div className="absolute text-white text-2xl sm:text-5xl font-semibold flex flex-col h-full justify-center text-center items-center w-full">
-            <p>Our Blog</p>
-          </div>
-        </div>
-
-        <div className="flex px-14 gap-4 flex-wrap justify-center py-20 ">
-          {card.map((d, i) => (
-            <div
-              key={i}
-              className="w-96 p-3 rounded-lg hover:border-red-500 border-1 hover:-translate-y-2 transition-all duration-300 hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]"
-            >
-              <div className="">
-                <img
-                  className="rounded-lg h-52 w-full object-cover "
-                  src={d.img}
-                  alt=""
-                />
-              </div>
-
-              <p className="text-center text-lg py-3">{d.topText}</p>
-              <div className="flex flex-row justify-start items-center gap-2 text-gray-400 text-sm  ">
-                <SlCalender />
-                <p>December 5, 2022</p>
-              </div>
-              <p className="py-4 text-center text-sm text-gray-500">
-                {d.bottomText}
-              </p>
-              <hr />
-              <div className="flex justify-center text-red-500 text-center">
-                <p>Read More</p>
-                <IoIosArrowRoundForward size={25} />
-              </div>
+      {/* Blog Cards */}
+      <div className="px-6 sm:px-14 py-20 flex flex-wrap justify-center gap-6">
+        {card.map((post, i) => (
+          <div
+            key={i}
+            className="w-80 sm:w-96 bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-2 duration-300"
+          >
+            <img
+              className="rounded-lg h-52 w-full object-cover mb-4"
+              src={post.img}
+              alt={`Blog ${i}`}
+            />
+            <h2 className="text-lg font-semibold text-indigo-800">{post.topText}</h2>
+            <div className="flex items-center text-gray-500 text-sm mt-2 mb-4">
+              
             </div>
-          ))}
-        </div>
-
-        <div className="flex items-center text-center py-8 px-3 flex-col bg-indigo-900 text-white hover:bg-red-600 transition-all duration-700">
-          <p className="text-2xl font-semibold ">Got A Question?</p>
-          <p>We're here to help. Send us an email or call us at 9024833455</p>
-        </div>
+            <p className="text-sm text-gray-600">{post.bottomText}</p>
+            <hr className="my-4" />
+            <div className="flex justify-start items-center text-cyan-600 font-medium hover:underline cursor-pointer">
+             
+            </div>
+          </div>
+        ))}
       </div>
+
+      {/* CTA Section */}
+      <div className="bg-indigo-800 text-white py-12 text-center px-6 hover:bg-cyan-700 transition-all duration-700">
+        <h3 className="text-2xl font-semibold">Have a Question About Software Solutions?</h3>
+        <p className="mt-2">
+          Our Calgary team is here to help. Reach out at <a href="tel:(403) 409-9268" className="underline">(403) 409-9268</a> or send us a message.
+        </p>
+      </div>
+
       <Footer />
     </div>
   );

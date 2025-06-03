@@ -29,7 +29,7 @@ const Nabbar = () => {
     <div>
       {/* Mobile Menu Overlay */}
       {isOpenMenu && (
-        <div className="sm:hidden fixed z-20 inset-0 bg-slate-800">
+        <div className="sm:hidden fixed z-20 inset-0 bg-blue-950">
           <div className="relative text-end mr-4 mt-4">
             <button onClick={() => setIsOpenMenu(false)}>
               <ImCross color="white" size={40} />
@@ -37,36 +37,40 @@ const Nabbar = () => {
           </div>
 
           <div className="flex flex-col pt-8 text-white text-2xl font-semibold text-center gap-4">
-            <Link to="/" onClick={() => setIsOpenMenu(false)}>HOME</Link>
-            <Link to="/about" onClick={() => setIsOpenMenu(false)}>ABOUT</Link>
-            <Link to="/blog" onClick={() => setIsOpenMenu(false)}>BLOG</Link>
-            <Link to="/contactus" onClick={() => setIsOpenMenu(false)}>CONTACT US</Link>
+            <Link to="/" onClick={() => setIsOpenMenu(false)}>Home</Link>
+            <Link to="/about" onClick={() => setIsOpenMenu(false)}>About Us</Link>
+            <Link to="/services" onClick={() => setIsOpenMenu(false)}>Services</Link>
+            <Link to="/blog" onClick={() => setIsOpenMenu(false)}>Insights</Link>
+            <Link to="/contactus" onClick={() => setIsOpenMenu(false)}>Contact</Link>
           </div>
         </div>
       )}
 
       {/* Navbar */}
       <div
-        className={`fixed top-0 w-full z-10 py-3 duration-300 ${
-          navbar ? "bg-blue-400" : "bg-transparent"
+        className={`fixed top-0 w-full z-10 py-3 transition duration-300 ${
+          navbar ? "bg-blue-700 shadow-md" : "bg-transparent"
         }`}
       >
         <div className="flex items-center justify-between px-4 sm:px-10">
           {/* Logo / Brand */}
-          <h1 className="text-2xl text-white font-bold">Fusionbyte IT Consultation & Solutions</h1>
+          <h1 className="text-xl sm:text-2xl text-white font-bold">
+            Calgary Software Developers Inc.
+          </h1>
 
           {/* Desktop Nav Links */}
-          <div className="hidden sm:flex text-white text-sm gap-6">
-            <Link to="/" className="hover:underline">HOME</Link>
-            <Link to="/about" className="hover:underline">ABOUT</Link>
-            <Link to="/blog" className="hover:underline">BLOG</Link>
-            <Link to="/contactus" className="hover:underline">CONTACT US</Link>
+          <div className="hidden sm:flex text-white text-sm gap-6 font-medium">
+            <Link to="/" className="hover:text-gray-200">Home</Link>
+            <Link to="/about" className="hover:text-gray-200">About Us</Link>
+            <Link to="/services" className="hover:text-gray-200">Services</Link>
+            <Link to="/blog" className="hover:text-gray-200">Insights</Link>
+            <Link to="/contactus" className="hover:text-gray-200">Contact</Link>
           </div>
 
           {/* Mobile Menu Icon */}
           <div className="sm:hidden">
             <button onClick={() => setIsOpenMenu(true)}>
-              <GiHamburgerMenu size={30} color="white" />
+              <GiHamburgerMenu size={28} color="white" />
             </button>
           </div>
         </div>

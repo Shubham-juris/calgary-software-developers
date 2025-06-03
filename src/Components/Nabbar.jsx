@@ -62,8 +62,8 @@ const Nabbar = () => {
           <div className="hidden sm:flex text-white text-sm gap-6 font-medium">
             <Link to="/" className="hover:text-gray-200">Home</Link>
             <Link to="/about" className="hover:text-gray-200">About Us</Link>
-            <Link to="/services" className="hover:text-gray-200">Services</Link>
-            <Link to="/blog" className="hover:text-gray-200">Insights</Link>
+            <Link to="/services" className="hover:text-gray-200"></Link>
+            <Link to="/blog" className="hover:text-gray-200">Blog</Link>
             <Link to="/contactus" className="hover:text-gray-200">Contact</Link>
           </div>
 

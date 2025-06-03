@@ -12,19 +12,23 @@ function Footer() {
         <div className="sm:flex justify-evenly px-3 gap-8">
           <div>
             <img
-              src="/logo-footer.png"
-              alt="FusionByte Logo"
+              src=""
+              alt=""
               className="w-48"
             />
             <div className="text-white flex flex-col gap-6 mt-4 text-sm">
               <p>
                 <strong>Address:</strong><br />
-                Suite 304, 535 10 Ave SW,<br />
-                Calgary, Alberta T2R 0A8
+                5211 50,Drayton Valley,<br />
+                AB T7A 1C9
               </p>
               <p>
                 <strong>Email:</strong><br />
-                contact@fusionbyte.ca
+                calgarysoftwaredeveloper@gmail.com
+              </p>
+              <p>
+                <strong>Phn no.</strong><br/>
+                (403)409-9268
               </p>
             </div>
           </div>
@@ -34,8 +38,8 @@ function Footer() {
             <Link to="/" className="text-gray-400 hover:text-white transition">Home</Link>
             <Link to="/about" className="text-gray-400 hover:text-white transition">About Us</Link>
             <Link to="/blog" className="text-gray-400 hover:text-white transition">Blog</Link>
-            <Link to="/services" className="text-gray-400 hover:text-white transition">Services</Link>
-            <Link to="/terms" className="text-gray-400 hover:text-white transition">Terms of Service</Link>
+            <Link to="/services" className="text-gray-400 hover:text-white transition"></Link>
+            <Link to="/terms" className="text-gray-400 hover:text-white transition"></Link>
             <Link to="/privacy" className="text-gray-400 hover:text-white transition">Privacy Policy</Link>
           </div>
 
@@ -72,7 +76,7 @@ function Footer() {
         </div>
 
         <div className="text-center text-gray-400 text-sm">
-          © 2024 FusionByte Software Solutions Inc. — Calgary's Premier Development Partner.
+          © 2024 Calgary Software Developer Inc. 
         </div>
       </div>
     </>

@@ -2,27 +2,27 @@ import React from "react";
 
 const data = [
   {
-    img: "/Services-jpg/ai-ml.png",
+    // img: "/Services-jpg/ai-ml.png",
     text: "AI & Machine Learning",
   },
   {
-    img: "/Services-jpg/modernization.png",
+    // img: "/Services-jpg/modernization.png",
     text: "Legacy Software Modernization",
   },
   {
-    img: "/Services-jpg/cloud.png",
+    // img: "/Services-jpg/cloud.png",
     text: "Cloud Architecture & Migration",
   },
   {
-    img: "/Services-jpg/cyber-security.png",
+    // img: "/Services-jpg/cyber-security.png",
     text: "Cybersecurity & Compliance",
   },
   {
-    img: "/Services-jpg/web-dev.png",
+    // img: "/Services-jpg/web-dev.png",
     text: "Custom Web & App Development",
   },
   {
-    img: "/Services-jpg/consulting.png",
+    // img: "/Services-jpg/consulting.png",
     text: "IT Strategy & Consulting",
   },
 ];

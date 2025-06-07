@@ -90,15 +90,7 @@ const Privacy = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h2 className="text-2xl font-semibold text-blue-800">Contact Us</h2>
-          <p>
-            If you have questions about this Privacy Policy or how we handle your data, please contact us:
-          </p>
-          <p className="text-blue-600">Email: info@fusionbyte.ca</p>
-          <p className="text-blue-600">Phone: +1 (403) 123-4567</p>
-          <p className="text-blue-600">Address: 1234 Innovation Drive NW, Calgary, AB</p>
-        </div>
+        
       </div>
 
       <Footer />

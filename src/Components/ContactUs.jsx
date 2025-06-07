@@ -39,20 +39,20 @@ const ContactUs = () => {
 
             <div className="flex items-center gap-3">
               <IoLocationSharp size={32} className="text-sky-400" />
-              <p>Calgary, Alberta</p>
+              <p>5211 50 St,Drayton Valley,AB T7A1C9</p>
             </div>
 
             <div className="flex items-center gap-3">
               <HiOutlineMailOpen size={28} className="text-orange-400" />
-              <p>fusionbyte@outlook.com</p>
+              <p></p>
             </div>
 
             <div className="flex items-center gap-3">
               <FaPhoneAlt size={26} className="text-green-400" />
-              <p>+1 (403) 123-4567</p>
+              <p>+1 (403) 409-9268</p>
             </div>
 
-            <div className="flex gap-4 pt-6 text-white">
+            {/* <div className="flex gap-4 pt-6 text-white">
               <a href="/" target="_blank" rel="noopener noreferrer">
                 <FaFacebookSquare size={32} />
               </a>
@@ -65,7 +65,7 @@ const ContactUs = () => {
               <a href="/" target="_blank" rel="noopener noreferrer">
                 <IoLogoLinkedin size={32} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Side - Form */}

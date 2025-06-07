@@ -116,7 +116,7 @@ const ContactUs = () => {
           </button>
         </div>
       </div>
-
+</div>
       <Footer />
     </div>
   );

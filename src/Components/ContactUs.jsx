@@ -32,33 +32,26 @@ const ContactUs = () => {
           </p>
         </div>
 
-        <div className="bg-white sm:p-14 p-8 rounded-3xl flex flex-col sm:flex-row">
+        <div className="bg-white sm:p-14 p-8 rounded-3xl flex flex-col sm:flex-row gap-8">
           {/* Left Side - Contact Info */}
-          <div className="bg-indigo-900 text-white sm:w-2/5 rounded-3xl p-10 flex flex-col gap-4">
+          <div className="bg-indigo-900 text-white sm:w-2/5 rounded-3xl p-10 flex flex-col gap-6">
             <p className="font-bold text-2xl">Get in Touch</p>
 
             <div className="flex items-center gap-3">
               <IoLocationSharp size={32} className="text-sky-400" />
-
-              <p>5211 50 St,Drayton Valley,AB T7A1C9</p>
-
-             
+              <p>5211 50 St, Drayton Valley, AB T7A1C9</p>
             </div>
 
             <div className="flex items-center gap-3">
               <HiOutlineMailOpen size={28} className="text-orange-400" />
               <p>calgarysoftwaredevelopers@gmail.com</p>
-
             </div>
 
             <div className="flex items-center gap-3">
               <FaPhoneAlt size={26} className="text-green-400" />
-
               <p>+1 (403) 409-9268</p>
             </div>
-
-            
-          
+          </div>
 
           {/* Right Side - Form */}
           <div className="sm:w-3/5 sm:px-6 pt-6">
@@ -106,17 +99,17 @@ const ContactUs = () => {
                 className="w-full border rounded-xl px-4 py-3 outline-none"
               />
             </div>
+
+            {/* Submit Button */}
+            <div className="flex sm:justify-end justify-center py-6">
+              <button className="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-10 rounded-xl transition duration-300">
+                Submit Message
+              </button>
+            </div>
           </div>
         </div>
-
-        {/* Submit Button */}
-        <div className="flex sm:justify-end justify-center py-6">
-          <button className="bg-indigo-700 hover:bg-indigo-900 text-white font-bold py-3 px-10 rounded-xl transition duration-300">
-            Submit Message
-          </button>
-        </div>
       </div>
-</div>
+
       <Footer />
     </div>
   );

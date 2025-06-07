@@ -3,6 +3,7 @@ import { FaCloud, FaCogs, FaLock, FaCode, FaLightbulb, FaBrain } from "react-ico
 
 const data = [
   {
+
     icon: <FaBrain className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
     text: "AI & Machine Learning",
   },
@@ -24,7 +25,8 @@ const data = [
   },
   {
     icon: <FaLightbulb className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
-    text: "IT Strategy & Consulting",
+
+    
   },
 ];
 

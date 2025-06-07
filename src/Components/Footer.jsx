@@ -11,15 +11,19 @@ function Footer() {
       <div className="bg-gray-900 py-8">
         <div className="sm:flex justify-evenly px-3 gap-8">
           <div>
+
            
             <div className="text-white flex flex-col gap-6 mt-4 text-sm">
               <p>
-                <strong>Address:</strong><br />
+               <strong>Address:</strong><br />
                 5211 50 St,Drayton Valley<br/>
                 AB T7A1C9
               </p><br/>
               <p>Phn no. (403)409-9268</p>
               
+
+          
+
             </div>
           </div>
 
@@ -49,16 +53,7 @@ function Footer() {
             <p className="text-gray-400 hover:text-white transition"></p>
             <Link to="/contactus" className="text-gray-400 hover:text-white transition"></Link>
 
-            {/* <div className="flex flex-wrap gap-3 pt-4 text-white">
-              <a href="/" target="_blank" rel="noopener noreferrer"><FaFacebookSquare size={25} /></a>
-              <a href="/" target="_blank" rel="noopener noreferrer"><FaInstagram size={25} /></a>
-              <a href="/" target="_blank" rel="noopener noreferrer"><FaYoutube size={25} /></a>
-              <a href="/" target="_blank" rel="noopener noreferrer"><SiGooglemaps size={25} /></a>
-              <a href="/" target="_blank" rel="noopener noreferrer"><FaSquarePinterest size={25} /></a>
-              <a href="/" target="_blank" rel="noopener noreferrer"><FaTwitterSquare size={25} /></a>
-              <a href="/" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size={25} /></a>
-            </div> */}
-          </div>
+
         </div>
 
         <div className="flex justify-center py-6">
@@ -66,7 +61,10 @@ function Footer() {
         </div>
 
         <div className="text-center text-gray-400 text-sm">
+
           © 2024 Calgary Software Solutions Inc. — Calgary's Premier Development Partner.
+
+         
         </div>
       </div>
     </>

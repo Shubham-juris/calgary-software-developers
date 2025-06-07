@@ -1,29 +1,32 @@
 import React from "react";
+import { FaCloud, FaCogs, FaLock, FaCode, FaLightbulb, FaBrain } from "react-icons/fa";
 
 const data = [
   {
-    // img: "/Services-jpg/ai-ml.png",
+
+    icon: <FaBrain className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
     text: "AI & Machine Learning",
   },
   {
-    // img: "/Services-jpg/modernization.png",
+    icon: <FaCogs className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
     text: "Legacy Software Modernization",
   },
   {
-    // img: "/Services-jpg/cloud.png",
+    icon: <FaCloud className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
     text: "Cloud Architecture & Migration",
   },
   {
-    // img: "/Services-jpg/cyber-security.png",
+    icon: <FaLock className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
     text: "Cybersecurity & Compliance",
   },
   {
-    // img: "/Services-jpg/web-dev.png",
+    icon: <FaCode className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
     text: "Custom Web & App Development",
   },
   {
-    // img: "/Services-jpg/consulting.png",
-    text: "IT Strategy & Consulting",
+    icon: <FaLightbulb className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
+
+    
   },
 ];
 
@@ -43,11 +46,7 @@ function Services() {
             key={i}
             className="group flex flex-col items-center justify-center text-center shadow-lg h-72 w-80 p-6 rounded-xl bg-white hover:bg-sky-100 transition duration-300 ease-in-out"
           >
-            <img
-              src={d.img}
-              alt={d.text}
-              className="w-16 h-16 mb-4 group-hover:scale-110 transition duration-300"
-            />
+            {d.icon}
             <p className="text-lg font-semibold text-sky-800">{d.text}</p>
           </div>
         ))}

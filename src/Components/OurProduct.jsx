@@ -1,95 +1,109 @@
 import React, { useEffect, useState } from "react";
+import {
+  FaProjectDiagram,
+  FaBook,
+  FaWallet,
+  FaRocket,
+  FaBed,
+  FaUtensils,
+  FaShoppingCart,
+  FaStore,
+  FaHospital,
+  FaPills,
+  FaUsers,
+  FaCogs,
+} from "react-icons/fa";
+
+const categories = [
+  {
+    name: "Business Solutions",
+    products: [
+      {
+        title: "SmartERP",
+        description: "Complete ERP solution for startups and SMEs",
+        icon: <FaCogs className="text-3xl text-white" />,
+      },
+      {
+        title: "BizPlanner",
+        description: "Project management & planning SaaS",
+        icon: <FaProjectDiagram className="text-3xl text-white" />,
+      },
+      {
+        title: "CRM Pro",
+        description: "Client Relationship Management tool",
+        icon: <FaUsers className="text-3xl text-white" />,
+      },
+      {
+        title: "BookSmart",
+        description: "Accounting & bookkeeping software",
+        icon: <FaBook className="text-3xl text-white" />,
+      },
+    ],
+  },
+  {
+    name: "Blockchain",
+    products: [
+      {
+        title: "ChainTrade",
+        description: "Crypto trading platform with wallet integration",
+        icon: <FaWallet className="text-3xl text-white" />,
+      },
+      {
+        title: "TokenLaunch",
+        description: "ICO/Token launch platform with smart contract support",
+        icon: <FaRocket className="text-3xl text-white" />,
+      },
+    ],
+  },
+  {
+    name: "Hospitality",
+    products: [
+      {
+        title: "StayWise",
+        description: "Hotel & vacation rental booking system",
+        icon: <FaBed className="text-3xl text-white" />,
+      },
+      {
+        title: "DineRight",
+        description: "Restaurant POS & management platform",
+        icon: <FaUtensils className="text-3xl text-white" />,
+      },
+    ],
+  },
+  {
+    name: "E-Commerce",
+    products: [
+      {
+        title: "ShopSwift",
+        description: "Multi-vendor eCommerce platform",
+        icon: <FaShoppingCart className="text-3xl text-white" />,
+      },
+      {
+        title: "RetailEdge",
+        description: "POS & inventory for small retailers",
+        icon: <FaStore className="text-3xl text-white" />,
+      },
+    ],
+  },
+  {
+    name: "Healthcare",
+    products: [
+      {
+        title: "MediTrack",
+        description: "Clinic & patient management software",
+        icon: <FaHospital className="text-3xl text-white" />,
+      },
+      {
+        title: "PharmaFlow",
+        description: "Pharmacy inventory and billing system",
+        icon: <FaPills className="text-3xl text-white" />,
+      },
+    ],
+  },
+];
 
 function OurProduct() {
   const [content, setContent] = useState([]);
-
-  const categories = [
-    {
-      name: "Business Solutions",
-      products: [
-        {
-          title: "SmartERP",
-          description: "Complete ERP solution for startups and SMEs",
-          icon: "/icons/erp.png",
-        },
-        {
-          title: "BizPlanner",
-          description: "Project management & planning SaaS",
-          icon: "/icons/planner.png",
-        },
-        {
-          title: "CRM Pro",
-          description: "Client Relationship Management tool",
-          icon: "/icons/crm.png",
-        },
-        {
-          title: "BookSmart",
-          description: "Accounting & bookkeeping software",
-          icon: "/icons/bookkeeping.png",
-        },
-      ],
-    },
-    {
-      name: "Blockchain",
-      products: [
-        {
-          title: "ChainTrade",
-          description: "Crypto trading platform with wallet integration",
-          icon: "/icons/crypto.png",
-        },
-        {
-          title: "TokenLaunch",
-          description: "ICO/Token launch platform with smart contract support",
-          icon: "/icons/token.png",
-        },
-      ],
-    },
-    {
-      name: "Hospitality",
-      products: [
-        {
-          title: "StayWise",
-          description: "Hotel & vacation rental booking system",
-          icon: "/icons/hotel.png",
-        },
-        {
-          title: "DineRight",
-          description: "Restaurant POS & management platform",
-          icon: "/icons/restaurant.png",
-        },
-      ],
-    },
-    {
-      name: "E-Commerce",
-      products: [
-        {
-          title: "ShopSwift",
-          description: "Multi-vendor eCommerce platform",
-          icon: "/icons/ecommerce.png",
-        },
-        {
-          title: "RetailEdge",
-          description: "POS & inventory for small retailers",
-          icon: "/icons/retail.png",
-        },
-      ],
-    },
-    {
-      name: "Healthcare",
-      products: [
-        {
-          title: "MediTrack",
-          description: "Clinic & patient management software",
-          icon: "/icons/clinic.png",
-        },
-        {
-          title: "PharmaFlow",
-          description: "Pharmacy inventory and billing system",
-          icon: "/icons/pharmacy.png",
-        },
-      ],
-    },
-  ];
 
   useEffect(() => {
     setContent(categories[0].products);
@@ -103,7 +117,7 @@ function OurProduct() {
       >
         <div className="flex h-full items-center p-3">
           <div className="h-20 w-20 flex justify-center items-center">
-            <img src={item.icon} alt={item.title} className="w-12 h-12" />
+            {item.icon}
           </div>
           <div className="ml-4 flex flex-col justify-center">
             <p className="font-bold text-lg">{item.title}</p>

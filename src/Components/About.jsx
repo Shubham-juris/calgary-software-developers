@@ -96,17 +96,7 @@ const About = () => {
         </section>
 
         {/* Final Call */}
-        <section className="py-12 space-y-4 text-center sm:text-left">
-          <h4 className="text-2xl font-bold">Your Trusted Calgary Tech Partner</h4>
-          <p className="text-gray-600">
-            With headquarters in Calgary, Alberta, and a distributed team across the globe, Calgary Digital Solutions is ready to bring your vision to life. Whether you're an early-stage startup or an established enterprise, we're your partner in building tomorrow’s technology today.
-          </p>
-          <div className="flex justify-center sm:justify-start gap-4 pt-4">
-            <CiFacebook size={32} className="text-orange-600 hover:text-orange-800" />
-            <FaXTwitter size={32} className="text-orange-600 hover:text-orange-800" />
-            <CiCirclePlus size={32} className="text-orange-600 hover:text-orange-800" />
-          </div>
-        </section>
+
       </div>
 
       <Footer />

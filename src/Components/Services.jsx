@@ -36,7 +36,7 @@ function Services() {
       <div className="flex flex-col items-center mb-10">
         <h2 className="font-extrabold text-4xl text-center text-sky-900 mb-3">Our Services</h2>
         <p className="text-center text-lg font-light max-w-3xl text-gray-700">
-          At <strong>Fusion Byte Software Solutions</strong> in Calgary, we help businesses unlock growth through cutting-edge technologies, cloud innovation, and secure digital transformation. Explore our core offerings:
+          In <strong>Calgary Software Developers</strong> in Calgary, we help businesses unlock growth through cutting-edge technologies, cloud innovation, and secure digital transformation. Explore our core offerings:
         </p>
       </div>
 

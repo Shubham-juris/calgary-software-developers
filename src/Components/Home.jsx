@@ -26,7 +26,7 @@ const Home = () => {
       <Services />
 {/*       <OurProduct /> */}
       {/* <Contact /> */}
-      <WhyFusion/>
+{/*       <WhyFusion/> */}
       <BusinessCentric />
       <Faq />
       <Footer />

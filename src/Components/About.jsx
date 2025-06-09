@@ -19,6 +19,7 @@ const About = () => {
           src="/About-pics/About.JPG"
           alt="About Us Banner"
           className="w-full h-full object-cover brightness-75"
+          loading="lazy"
         />
         <div className="absolute inset-0 flex items-center justify-center text-white text-4xl sm:text-5xl font-bold">
           <p>About Us</p>
@@ -57,7 +58,7 @@ const About = () => {
           ].map((stat, idx) => (
             <div
               key={idx}
-              className="border-2 border-orange-500 rounded-tl-xl rounded-br-xl w-40 h-40 flex flex-col justify-center items-center text-center hover:scale-105 transition-all duration-200 hover:bg-orange-500 hover:text-white"
+              className="border-2 border-orange-500 rounded-tl-xl rounded-br-xl w-36 sm:w-40 h-40 flex flex-col justify-center items-center text-center hover:scale-105 transition-all duration-200 hover:bg-orange-500 hover:text-white"
             >
               <p className="text-2xl font-bold">{stat.value}</p>
               <p className="text-sm">{stat.label}</p>
@@ -65,38 +66,21 @@ const About = () => {
           ))}
         </section>
 
-        {/* Partner Logos */}
-        <section className="my-12">
-          <h3 className="text-3xl font-semibold text-center mb-8">
-            Trusted By Industry Leaders
+        {/* Final Call To Action */}
+        <section className="text-center my-16">
+          <h3 className="text-2xl font-semibold mb-4">
+            Ready to transform your business?
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 place-items-center px-4">
-            {[
-              "amazon-web-services-logo.jpg.webp",
-              "Apple-1.png.webp",
-              "Automation-Anywhere.png.webp",
-              "Bing-Partner.png.webp",
-              "Blue-Prism-Delivery-Partner.png.webp",
-              "cloud-migarator-logo.jpg.webp",
-              "Google-Partner.png.webp",
-              "Group-19-1.png.webp",
-              "Group-19.png.webp",
-              "microsoft-goldlogo-small.jpg.webp",
-              "UI-Path-Partner.png.webp",
-              "vm-wave-logo.jpg.webp",
-            ].map((logo, i) => (
-              <div
-                key={i}
-                className="p-4 bg-white shadow-sm hover:bg-orange-100 transition-all duration-200 rounded-md"
-              >
-                <img src={`/About-pics/${logo}`} alt="Partner Logo" className="max-h-12 object-contain" />
-              </div>
-            ))}
-          </div>
+          <p className="text-gray-600 mb-6">
+            Let’s discuss your next big idea and how we can bring it to life.
+          </p>
+          <a
+            href="/contact"
+            className="inline-block bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition duration-200"
+          >
+            Contact Us
+          </a>
         </section>
-
-        {/* Final Call */}
-
       </div>
 
       <Footer />
@@ -105,3 +89,4 @@ const About = () => {
 };
 
 export default About;
+

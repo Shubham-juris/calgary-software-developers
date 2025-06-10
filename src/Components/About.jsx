@@ -78,7 +78,7 @@ const About = () => {
             href="/contact"
             className="inline-block bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition duration-200"
           >
-            Contact Us
+            
           </a>
         </section>
       </div>

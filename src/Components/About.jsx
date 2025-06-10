@@ -74,12 +74,7 @@ const About = () => {
           <p className="text-gray-600 mb-6">
             Let’s discuss your next big idea and how we can bring it to life.
           </p>
-          <a
-            href="/contact"
-            className="inline-block bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition duration-200"
-          >
-            
-          </a>
+         
         </section>
       </div>
 

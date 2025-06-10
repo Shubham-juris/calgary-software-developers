@@ -49,28 +49,6 @@ function Footer() {
           </Link>
         </div>
 
-        {/* Services Section */}
-        <div className="text-white flex flex-col gap-2 py-3 text-sm">
-          <p className="text-2xl font-semibold">Our Services</p>
-          <Link to="/NavPages/BackendDevlopment" className="text-gray-400 hover:text-white transition">
-            Custom Web Applications
-          </Link>
-          <Link to="/NavPages/DataBase" className="text-gray-400 hover:text-white transition">
-            Cloud Integration & DevOps
-          </Link>
-          <Link to="/NavPages/FrontEndDev" className="text-gray-400 hover:text-white transition">
-            AI & Machine Learning Solutions
-          </Link>
-          <Link to="/NavPages/MobileAppDev" className="text-gray-400 hover:text-white transition">
-            Cybersecurity Audits
-          </Link>
-          <Link to="/NavPages/DataBase" className="text-gray-400 hover:text-white transition">
-            Digital Strategy Consulting
-          </Link>
-          <Link to="/NavPages/FrontEndDev" className="text-gray-400 hover:text-white transition">
-            UI/UX Design
-          </Link>
-        </div>
 
         {/* Support Section */}
         <div className="py-3 flex flex-col gap-2 text-white text-sm">

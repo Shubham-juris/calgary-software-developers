@@ -1,5 +1,10 @@
 import React from "react";
-import { FaFacebookSquare, FaTwitterSquare, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaSquarePinterest } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { SiGooglemaps } from "react-icons/si";
@@ -12,8 +17,10 @@ function Footer() {
         {/* Address Section */}
         <div className="text-white flex flex-col gap-6 mt-4 text-sm">
           <p>
-            <strong>Address:</strong><br />
-            5211 50 St, Drayton Valley<br />
+            <strong>Address:</strong>
+            <br />
+            5211 50 St, Drayton Valley
+            <br />
             AB T7A1C9
           </p>
           <p>Phn no. (403)409-9268</p>
@@ -22,29 +29,55 @@ function Footer() {
         {/* Useful Links */}
         <div className="text-white flex flex-col py-3 gap-2 text-sm">
           <p className="text-2xl font-semibold">Useful Links</p>
-          <Link to="/" className="text-gray-400 hover:text-white transition">Home</Link>
-          <Link to="/about" className="text-gray-400 hover:text-white transition">About Us</Link>
-          <Link to="/blog" className="text-gray-400 hover:text-white transition">Blog</Link>
-          <Link to="/services" className="text-gray-400 hover:text-white transition"></Link>
-          <Link to="/terms" className="text-gray-400 hover:text-white transition"></Link>
-          <Link to="/privacy" className="text-gray-400 hover:text-white transition">Privacy Policy</Link>
+          <Link to="/" className="text-gray-400 hover:text-white transition">
+            Home
+          </Link>
+          <Link to="/about" className="text-gray-400 hover:text-white transition">
+            About Us
+          </Link>
+          <Link to="/blog" className="text-gray-400 hover:text-white transition">
+            Blog
+          </Link>
+          <Link to="/services" className="text-gray-400 hover:text-white transition">
+            Services
+          </Link>
+          <Link to="/terms" className="text-gray-400 hover:text-white transition">
+            Terms & Conditions
+          </Link>
+          <Link to="/privacy" className="text-gray-400 hover:text-white transition">
+            Privacy Policy
+          </Link>
         </div>
 
         {/* Services Section */}
         <div className="text-white flex flex-col gap-2 py-3 text-sm">
           <p className="text-2xl font-semibold">Our Services</p>
-          <p className="text-gray-400 hover:text-white transition">Custom Web Applications</p>
-          <p className="text-gray-400 hover:text-white transition">Cloud Integration & DevOps</p>
-          <p className="text-gray-400 hover:text-white transition">AI & Machine Learning Solutions</p>
-          <p className="text-gray-400 hover:text-white transition">Cybersecurity Audits</p>
-          <p className="text-gray-400 hover:text-white transition">Digital Strategy Consulting</p>
-          <p className="text-gray-400 hover:text-white transition">UI/UX Design</p>
+          <Link to="/NavPages/BackendDevlopment" className="text-gray-400 hover:text-white transition">
+            Custom Web Applications
+          </Link>
+          <Link to="/NavPages/DataBase" className="text-gray-400 hover:text-white transition">
+            Cloud Integration & DevOps
+          </Link>
+          <Link to="/NavPages/FrontEndDev" className="text-gray-400 hover:text-white transition">
+            AI & Machine Learning Solutions
+          </Link>
+          <Link to="/NavPages/MobileAppDev" className="text-gray-400 hover:text-white transition">
+            Cybersecurity Audits
+          </Link>
+          <Link to="/NavPages/DataBase" className="text-gray-400 hover:text-white transition">
+            Digital Strategy Consulting
+          </Link>
+          <Link to="/NavPages/FrontEndDev" className="text-gray-400 hover:text-white transition">
+            UI/UX Design
+          </Link>
         </div>
 
         {/* Support Section */}
         <div className="py-3 flex flex-col gap-2 text-white text-sm">
           <p className="text-2xl font-semibold">Support</p>
-          <Link to="/contactus" className="text-gray-400 hover:text-white transition">Contact Us</Link>
+          <Link to="/contactus" className="text-gray-400 hover:text-white transition">
+            Contact Us
+          </Link>
         </div>
       </div>
 
@@ -62,3 +95,4 @@ function Footer() {
 }
 
 export default Footer;
+

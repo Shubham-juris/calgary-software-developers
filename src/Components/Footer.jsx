@@ -39,10 +39,10 @@ function Footer() {
             Blog
           </Link>
           <Link to="/services" className="text-gray-400 hover:text-white transition">
-            Services
+            
           </Link>
           <Link to="/terms" className="text-gray-400 hover:text-white transition">
-            Terms & Conditions
+            
           </Link>
           <Link to="/privacy" className="text-gray-400 hover:text-white transition">
             Privacy Policy

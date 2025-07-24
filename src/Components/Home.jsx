@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import HeroCarousel from "./HeroCarousel";
 import Services from "./Services";
-import OurProduct from "./OurProduct";
+// import OurProduct from "./OurProduct";
 import WhyFusion from "./WhyArisezen";
 import Contact from "./Contact";
 import BusinessCentric from "./BusinessCentric";

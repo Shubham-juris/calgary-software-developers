@@ -23,11 +23,11 @@ const data = [
     icon: <FaCode className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
     text: "Custom Web & App Development",
   },
-  {
-    icon: <FaLightbulb className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
+  // {
+  //   icon: <FaLightbulb className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
 
     
-  },
+  // },
 ];
 
 function Services() {

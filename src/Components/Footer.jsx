@@ -23,7 +23,7 @@ function Footer() {
             <br />
             AB T7A1C9
           </p>
-          <p>Phn no. (403)409-9268</p>
+          <p>Phn no. (403)409-9269</p>
         </div>
 
         {/* Useful Links */}

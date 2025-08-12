@@ -5,6 +5,7 @@ import { CiTwitter } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { Link } from "react-router-dom";
+import logo from "../assets/navbar/logo.jpg";
 
 const Nabbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -37,11 +38,19 @@ const Nabbar = () => {
           </div>
 
           <div className="flex flex-col pt-8 text-white text-2xl font-semibold text-center gap-4">
-            <Link to="/" onClick={() => setIsOpenMenu(false)}>Home</Link>
-            <Link to="/about" onClick={() => setIsOpenMenu(false)}>About Us</Link>
+            <Link to="/" onClick={() => setIsOpenMenu(false)}>
+              Home
+            </Link>
+            <Link to="/about" onClick={() => setIsOpenMenu(false)}>
+              About Us
+            </Link>
             <Link to="/services" onClick={() => setIsOpenMenu(false)}></Link>
-            <Link to="/blog" onClick={() => setIsOpenMenu(false)}>Blog</Link>
-            <Link to="/contactus" onClick={() => setIsOpenMenu(false)}>Contact</Link>
+            <Link to="/blog" onClick={() => setIsOpenMenu(false)}>
+              Blog
+            </Link>
+            <Link to="/contactus" onClick={() => setIsOpenMenu(false)}>
+              Contact
+            </Link>
           </div>
         </div>
       )}
@@ -53,18 +62,27 @@ const Nabbar = () => {
         }`}
       >
         <div className="flex items-center justify-between px-4 sm:px-10">
-          {/* Logo / Brand */}
-          <h1 className="text-xl sm:text-2xl text-white font-bold">
-            Calgary Software Developers Inc.
-          </h1>
+          <img
+            src={logo}
+            alt="Calgary Software Developers Logo"
+            className="w-20 h-20 sm:w-16 sm:h-16 ml-18"
+          />
 
           {/* Desktop Nav Links */}
           <div className="hidden sm:flex text-white text-sm gap-6 font-medium">
-            <Link to="/" className="hover:text-gray-200">Home</Link>
-            <Link to="/about" className="hover:text-gray-200">About Us</Link>
+            <Link to="/" className="hover:text-gray-200">
+              Home
+            </Link>
+            <Link to="/about" className="hover:text-gray-200">
+              About Us
+            </Link>
             <Link to="/services" className="hover:text-gray-200"></Link>
-            <Link to="/blog" className="hover:text-gray-200">Blog</Link>
-            <Link to="/contactus" className="hover:text-gray-200">Contact</Link>
+            <Link to="/blog" className="hover:text-gray-200">
+              Blog
+            </Link>
+            <Link to="/contactus" className="hover:text-gray-200">
+              Contact
+            </Link>
           </div>
 
           {/* Mobile Menu Icon */}

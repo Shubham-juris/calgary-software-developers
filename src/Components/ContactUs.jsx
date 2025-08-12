@@ -58,7 +58,7 @@ const ContactUs = () => {
 
             <div className="flex items-center gap-3">
               <FaPhoneAlt size={24} className="text-white" />
-              <p>+1 (403) 409-9268</p>
+              <p>+1 (403) 409-9269</p>
             </div>
           </div>
 

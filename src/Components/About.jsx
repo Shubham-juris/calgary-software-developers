@@ -18,7 +18,7 @@ const About = () => {
         <img
           src="/About-pics/About.JPG"
           alt="About Us Banner"
-          className="w-full h-full object-cover brightness-75"
+          className="w-full h-500 object-cover brightness-75"
           loading="lazy"
         />
         <div className="absolute inset-0 flex items-center justify-center text-white text-4xl sm:text-5xl font-bold">

@@ -98,7 +98,7 @@ const Blog = () => {
       <div className="bg-indigo-800 text-white py-12 text-center px-6 hover:bg-cyan-700 transition-all duration-700">
         <h3 className="text-2xl font-semibold">Have a Question About Software Solutions?</h3>
         <p className="mt-2">
-          Our Calgary team is here to help. Reach out at <a href="tel:(403) 409-9268" className="underline">(403) 409-9268</a> or send us a message.
+          Our Calgary team is here to help. Reach out at <a href="tel:(403) 409-9269" className="underline">(403) 409-9269</a> or send us a message.
         </p>
       </div>
 

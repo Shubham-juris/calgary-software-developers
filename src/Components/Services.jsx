@@ -1,42 +1,94 @@
 import React from "react";
-import { FaCloud, FaCogs, FaLock, FaCode, FaLightbulb, FaBrain } from "react-icons/fa";
+import {
+  FaCloud,
+  FaCogs,
+  FaLock,
+  FaCode,
+  FaLightbulb,
+  FaBrain,
+  FaMobileAlt,
+  FaLaptopCode,
+  FaSearch,
+  FaPaintBrush,
+  FaServer,
+  FaChartLine,
+} from "react-icons/fa";
 
 const data = [
   {
-
-    icon: <FaBrain className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
+    icon: (
+      <FaMobileAlt className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
+    text: "Mobile App Development",
+  },
+  {
+    icon: (
+      <FaLaptopCode className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
+    text: "Custom Web Development",
+  },
+  {
+    icon: (
+      <FaPaintBrush className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
+    text: "UI/UX & Web Designing",
+  },
+  {
+    icon: (
+      <FaCloud className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
+    text: "Cloud Architecture & Services",
+  },
+  {
+    icon: (
+      <FaBrain className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
     text: "AI & Machine Learning",
   },
   {
-    icon: <FaCogs className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
+    icon: (
+      <FaSearch className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
+    text: "SEO & Digital Marketing",
+  },
+  {
+    icon: (
+      <FaChartLine className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
+    text: "Business Growth Consulting",
+  },
+  {
+    icon: (
+      <FaServer className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
+    text: "Web Hosting & Cloud Services",
+  },
+  {
+    icon: (
+      <FaCogs className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
     text: "Legacy Software Modernization",
   },
   {
-    icon: <FaCloud className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
-    text: "Cloud Architecture & Migration",
-  },
-  {
-    icon: <FaLock className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
+    icon: (
+      <FaLock className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />
+    ),
     text: "Cybersecurity & Compliance",
   },
-  {
-    icon: <FaCode className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
-    text: "Custom Web & App Development",
-  },
-  // {
-  //   icon: <FaLightbulb className="text-4xl text-sky-700 mb-4 group-hover:scale-110 transition duration-300" />,
-
-    
-  // },
 ];
 
 function Services() {
   return (
     <div className="my-12 px-4">
       <div className="flex flex-col items-center mb-10">
-        <h2 className="font-extrabold text-4xl text-center text-sky-900 mb-3">Our Services</h2>
+        <h2 className="font-extrabold text-4xl text-center text-sky-900 mb-3">
+          Our Services
+        </h2>
         <p className="text-center text-lg font-light max-w-3xl text-gray-700">
-          In <strong>Calgary Software Developers</strong> in Calgary, we help businesses unlock growth through cutting-edge technologies, cloud innovation, and secure digital transformation. Explore our core offerings:
+          At <strong>Calgary Software Developers</strong>, we provide end-to-end
+          digital solutions — from <span className="font-semibold">web & app development</span> to{" "}
+          <span className="font-semibold">cloud services, AI, and digital marketing</span>. Our mission is to help
+          businesses grow faster with innovative technology.
         </p>
       </div>
 

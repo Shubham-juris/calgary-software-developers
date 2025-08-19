@@ -15,6 +15,7 @@ import InternshipAndTraining from "./NavPages/InternshipAndTraining.jsx";
 import Privacy from "./Components/Privacy.jsx";
 import BackendDevlopment from "./NavPages/BackendDevlopment.jsx";
 import Qa from "./NavPages/Qa.jsx";
+import ServicePage from "./Components/ServicePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+       {
+        path: "/services",
+        element: <ServicePage />,
       },
       {
         path: "/blog",

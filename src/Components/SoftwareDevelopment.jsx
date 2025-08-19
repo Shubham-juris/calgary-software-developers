@@ -13,7 +13,6 @@ const SoftwareDevelopment = () => {
   return (
     <div>
       <div>
-        <Nabbar />
       </div>
 
       <div className=" h-80  flex relative ">

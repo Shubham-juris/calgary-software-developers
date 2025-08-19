@@ -66,21 +66,34 @@ function BusinessCentric() {
       </div>
 
       {/* Featured Section */}
-      <div className="bg-white mt-12 rounded-xl shadow-md flex flex-col sm:flex-row items-center justify-between p-6 sm:p-12">
-        <div className="sm:w-1/2">
-          <h3 className="text-3xl font-extrabold text-indigo-700 mb-4">Digital Transformation</h3>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            Calgary is evolving into a digital-first city, with local businesses seeking smarter and faster ways to grow. Our team specializes in enabling digital transformation by integrating AI, cloud, mobile, and analytics into your business model. We help you modernize your technology stack and future-proof your operations—whether you're a startup or an established enterprise.
-          </p>
-        </div>
-        <div className="sm:w-1/2 mt-10 sm:mt-0 flex justify-center">
-          <img
-            src="/Business-Centric-pics/images-3.jpg"
-            alt="Digital Transformation"
-            className="rounded-lg shadow-md w-full max-w-md"
-          />
-        </div>
-      </div>
+     <div className="bg-white mt-12 rounded-xl shadow-md p-6 sm:p-12">
+  <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center gap-10">
+    {/* Left Content */}
+    <div className="sm:w-1/2">
+      <h3 className="text-3xl font-extrabold text-indigo-700 mb-4">
+        Digital Transformation
+      </h3>
+      <p className="text-gray-700 text-lg leading-relaxed">
+        Calgary is evolving into a digital-first city, with local businesses
+        seeking smarter and faster ways to grow. Our team specializes in
+        enabling digital transformation by integrating AI, cloud, mobile,
+        and analytics into your business model. We help you modernize your
+        technology stack and future-proof your operations—whether you're a
+        startup or an established enterprise.
+      </p>
+    </div>
+
+    {/* Right Image */}
+    <div className="sm:w-1/2 flex justify-center">
+      <img
+        src="/Business-Centric-pics/images-3.jpg"
+        alt="Digital Transformation"
+        className="rounded-lg shadow-md w-full max-w-md"
+      />
+    </div>
+  </div>
+</div>
+
     </div>
   );
 }

@@ -1,10 +1,9 @@
 import React from "react";
-import Nabbar from "./Nabbar";
+import img1 from "../assets/home/img2.jpg"
 
 function HeroCarousel() {
   return (
     <div className="relative w-full">
-      <Nabbar />
 
       <div
         id="carouselExampleInterval"

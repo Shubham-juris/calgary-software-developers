@@ -86,7 +86,7 @@ function Footer() {
               <FaFacebookSquare />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/calgarysoftwaredevelopers6"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white text-2xl"

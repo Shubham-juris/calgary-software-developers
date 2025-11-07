@@ -78,7 +78,7 @@ function Footer() {
           {/* Social Icons under address + phone */}
           <div className="flex gap-3">
             <a
-              href="https://facebook.com"
+              href="https://facebook.com/profile.php?id=61556795012375"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white text-2xl"

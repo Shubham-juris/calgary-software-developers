@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookSquare, FaInstagram, FaPhoneAlt } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
@@ -78,7 +79,7 @@ function Footer() {
           {/* Social Icons under address + phone */}
           <div className="flex gap-3">
             <a
-              href="https://facebook.com/profile.php?id=61556795012375"
+              href="https://www.facebook.com/Calgarysoftwaredevelopers"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white text-2xl"
@@ -86,13 +87,21 @@ function Footer() {
               <FaFacebookSquare />
             </a>
             <a
-              href="https://instagram.com/calgarysoftwaredevelopers6"
+              href="https://www.instagram.com/calgary.software24/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white text-2xl"
             >
               <FaInstagram />
             </a>
+            <a
+            href="https://x.com/software91870"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white text-2xl"
+            >
+            <FaXTwitter />
+          </a>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-3 gap-10">
         {/* Left - Logo + About */}
         <div>
-          <h2 className="text-2xl font-bold">Calgary Software Solutions</h2>
+          <h2 className="text-2xl font-bold">Calgary Software Developers</h2>
           <p className="text-gray-400 mt-3 text-sm">
             Calgary's Premier Development Partner. We build scalable, innovative
             software solutions for businesses of all sizes.
@@ -109,7 +109,7 @@ function Footer() {
       {/* Bottom - Copyright */}
       <div className="border-t border-gray-700 py-6 text-center">
         <p className="text-gray-500 text-sm">
-          © 2024 Calgary Software Solutions Inc. — All Rights Reserved.
+          © 2024 Calgary Software Developers. — All Rights Reserved.
         </p>
       </div>
     </div>

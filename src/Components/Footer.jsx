@@ -109,7 +109,7 @@ function Footer() {
       {/* Bottom - Copyright */}
       <div className="border-t border-gray-700 py-6 text-center">
         <p className="text-gray-500 text-sm">
-          © 2024 Calgary Software Developers. — All Rights Reserved.
+          © 2024 Powered By Calgary Software Developers. — All Rights Reserved.
         </p>
       </div>
     </div>
